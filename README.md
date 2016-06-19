@@ -5,7 +5,12 @@
 - 「適応」と「適用」
     - [適用 vs 適応 - Qiita](http://qiita.com/magicant/items/229424403fee643b7075)
     - [設定は「適用」するものです。 - Qiita](http://qiita.com/yama-t/items/4f84ed6940682f62827f)
-
+- 「値を返却する」の誤用
+    - [「値を返却する」って言うな - Qiita](http://qiita.com/scivola/items/d9f26ea13691f8c5e6a4 "「値を返却する」って言うな - Qiita")
+- 「可変する」の誤用
+    - [「可変する」という言葉](http://qiita.com/scivola/items/f02589968a4ca27bc52b#%E5%8F%AF%E5%A4%89%E3%81%99%E3%82%8B%E3%81%A8%E3%81%84%E3%81%86%E8%A8%80%E8%91%89 "「可変する」という言葉")
+- 「例外を補足する」の誤用
+    - [「例外を補足する」](http://qiita.com/scivola/items/f02589968a4ca27bc52b#%E4%BE%8B%E5%A4%96%E3%82%92%E8%A3%9C%E8%B6%B3%E3%81%99%E3%82%8B "「例外を補足する」")
 
 ## Install
 

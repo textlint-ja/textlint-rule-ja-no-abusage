@@ -1,6 +1,6 @@
 version: 1
 rules:
-  # http://qiita.com/scivola/items/d9f26ea13691f8c5e6a4
+  # 「返却」http://qiita.com/scivola/items/d9f26ea13691f8c5e6a4
   - expected: 値を返却する
     patterns: 値を返す
     prh: See http://qiita.com/scivola/items/d9f26ea13691f8c5e6a4
@@ -12,3 +12,6 @@ rules:
         to:   これはメソッドの返り値
       - from: 関数の返却値
         to:   関数の返り値
+  # 「例外を補足」
+  - expected: 例外を捕捉
+    patterns: 例外を補足
