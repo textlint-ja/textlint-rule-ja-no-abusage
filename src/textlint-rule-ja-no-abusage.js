@@ -4,7 +4,7 @@ const tokenize = require("kuromojin").tokenize;
 const fs = require("fs");
 const path = require("path");
 const prh = require("textlint-rule-prh");
-const dictionaryList = require("./no-confusing-adjust-and-apply");
+const dictionaryList = require("./dictionary");
 const createTokenMatcher = require("morpheme-match");
 const reporter = (context) => {
     const {Syntax, RuleError, report, fixer, getSource} = context;
@@ -18,7 +18,7 @@ const reporter = (context) => {
     const prhLinter = prh.linter;
     const prhStr = prhLinter(context, {
         ruleContents:[
-            fs.readFileSync(path.join(__dirname, "no-restitution-value.yml"))
+            fs.readFileSync(path.join(__dirname, "prh.yml"))
         ]
     });
     return {
