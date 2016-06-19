@@ -29,6 +29,28 @@ module.exports = [
                 "pronunciation": "テキオー"
             }
         ]
+    },
+    {
+        // http://azu.github.io/morpheme-match/?text=長さを(可変する)
+        message: `「可変する」という使い方は適切ではありません。「可逆」と同じ使い方になります。\nhttp://qiita.com/scivola/items/f02589968a4ca27bc52b`,
+        tokens: [
+            {
+                "surface_form": "可変",
+                "pos": "名詞",
+                "pos_detail_1": "一般",
+                "pos_detail_2": "*",
+                "pos_detail_3": "*",
+                "conjugated_type": "*",
+                "conjugated_form": "*",
+                "basic_form": "可変",
+                "reading": "カヘン",
+                "pronunciation": "カヘン"
+            },
+            {
+                "pos": "動詞",
+                "pos_detail_1": "自立"
+            }
+        ]
 
     }
 ];
