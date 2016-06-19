@@ -36,6 +36,14 @@ Via CLI
 textlint --rule ja-no-abusage README.md
 ```
 
+## 仕組み
+
+2種類の辞書ベースを持っています。
+
+- 形態素解析結果をベースにした[morpheme-match](http://azu.github.io/morpheme-match/ "morpheme-match")
+- 正規表現をベースにした[textlint-rule-prh](https://github.com/azu/textlint-rule-prh "textlint-rule-prh")
+
+の2種類を使い分けています。
 
 ## Changelog
 
