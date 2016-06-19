@@ -18,7 +18,7 @@ const reporter = (context) => {
     const prhLinter = prh.linter;
     const prhStr = prhLinter(context, {
         ruleContents: [
-            fs.readFileSync(path.join(__dirname, "..", "prh.yml"))
+            fs.readFileSync(path.join(__dirname, "..", "dict", "prh.yml"))
         ]
     });
     return {
