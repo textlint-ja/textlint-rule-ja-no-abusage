@@ -1,6 +1,9 @@
 // LICENSE : MIT
 "use strict";
 const tokenize = require("kuromojin").tokenize;
+const fs = require("fs");
+const path = require("path");
+const prh = require("textlint-rule-prh");
 const dictionaryList = require("./no-confusing-adjust-and-apply");
 const createTokenMatcher = require("morpheme-match");
 const reporter = (context) => {
@@ -12,9 +15,16 @@ const reporter = (context) => {
             expected: dict["expected"]
         };
     });
+    const prhLinter = prh.linter;
+    const prhStr = prhLinter(context, {
+        ruleContents:[
+            fs.readFileSync(path.join(__dirname, "no-restitution-value.yml"))
+        ]
+    });
     return {
         [Syntax.Str](node){
             const text = getSource(node);
+            prhStr[Syntax.Str](node);
             return tokenize(text).then(currentTokens => {
                 currentTokens.forEach(token => {
                     matcherList.forEach(({matcher, message, expected}) => {

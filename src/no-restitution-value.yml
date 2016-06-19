@@ -1,0 +1,11 @@
+version: 1
+rules:
+  - expected: 値を返却する
+    patterns: 値を返す
+  - expected: $1の返り値
+    patterns: /(メソッド|関数)の返却値/
+    specs:
+      - from: これはメソッドの返却値
+        to:   これはメソッドの返り値
+      - from: 関数の返却値
+        to:   関数の返り値
