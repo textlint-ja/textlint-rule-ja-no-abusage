@@ -15,3 +15,114 @@ rules:
   # 「例外を補足」
   - expected: 例外を捕捉
     patterns: 例外を補足
+  - expected: 愛くるしい
+    patterns: 愛苦しい
+    prh: http://dictionary.goo.ne.jp/jn/692/meaning/m0u/
+  - expected: あくどい
+    patterns: 悪どい
+    prh: https://web.archive.org/web/20150408184042/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=173
+  - expected: $1を傾ける
+    patterns: /(うんちく|薀蓄)を垂れる/
+    prh: https://gakumado.mynavi.jp/gmd/articles/27802
+  - expected: 転嫁
+    patterns: 転稼
+    prh: https://gakumado.mynavi.jp/gmd/articles/27802
+  - expected: こんにちは
+    patterns: こんにちわ
+    prh: http://japanknowledge.com/articles/blognihongo/entry.html?entryid=113
+  - expected: 愛嬌を$1まく
+    patterns: /愛想を(振り|ふり)まく/
+    prh: https://web.archive.org/web/20150408182846/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=115
+  - expected: 論陣を張る
+    patterns: 論戦を張る
+    prh: https://web.archive.org/web/20150407172247/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=119
+  - expected: 潔い
+    patterns: /(いさぎ良い|潔よい)/
+    prh: https://web.archive.org/web/20150407155736/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=169
+  - expected: 寸暇を惜しんで
+    patterns: 寸暇を惜しまず
+    prh: https://web.archive.org/web/20150408185444/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=132
+  - expected: 間を置かず
+    patterns: 寸暇を置かず
+    prh: https://web.archive.org/web/20150407185011/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=133
+  - expected: 二つ返事
+    patterns: 一つ返事
+    prh: https://web.archive.org/web/20150408185551/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=131
+  - expected: 怒り心頭に発する
+    patterns: 怒り心頭に達する
+    prh: https://web.archive.org/web/20150408185212/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=188
+  - expected: 熱に浮かされる
+    patterns: 熱にうなされる
+    prh: https://web.archive.org/web/20150407160525/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=48
+  - expected: やるせぬ
+    patterns: やるせない
+    prh: https://web.archive.org/web/20150408185109/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=203
+  - expected: 馬脚を露わす
+    patterns: /馬脚を(晒す|さらす|出す)/
+    prh: https://web.archive.org/web/20150407184513/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=209
+  - expected: 雪辱を果たす
+    patterns: 雪辱を晴らす
+    prh: https://web.archive.org/web/20150407155513/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=212
+  - expected: うろ覚え
+    patterns: うる覚え
+    prh: https://web.archive.org/web/20150407161100/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=216
+  - expected: 首を$1
+    patterns: /頭を(傾げる|かしげる|かたげる)/
+    prh: https://web.archive.org/web/20150408190425/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=213
+  - expected: 舌先三寸
+    patterns: 口先三寸
+    prh: https://web.archive.org/web/20140517134132/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=224
+  - expected: 舌の根の乾かぬ
+    patterns: 舌の先の乾かぬ
+    prh: https://web.archive.org/web/20150408184454/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=226
+  - expected: 悪評高い
+    patterns: /悪評(?:嘖々|嘖嘖|さくさく)/
+    prh: https://www.nhk.or.jp/bunken/summary/kotoba/gimon/128.html
+  - expected: 器官
+    patterns: 器管
+    prh: https://web.archive.org/web/20140726094700/https://japanknowledge.com/articles/blognihongo/entry.html?entryid=235
+  - expected: $1を切る
+    patterns: /(火蓋|火ぶた)を(?:切って)?落とす/
+    prh: http://japanknowledge.com/articles/blognihongo/entry.html?entryid=314
+  - expected: $1が切られる
+    patterns: /(火蓋|火ぶた)が(?:切って)?落とされる/
+    prh: https://www.nhk.or.jp/bunken/summary/kotoba/gimon/137.html
+  - expected: $1島$2$3
+    patterns: /(取り付く|とりつく)(?:暇|ヒマ|ひま)(も|が)(?:無い|ない)/
+    prh: https://web.archive.org/web/20150206044421/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=264
+  - expected: 上を下への
+    patterns: /上(?:や|へ)下への/
+    prh: https://web.archive.org/web/20150417042551/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=274
+  - expected: 押しも押されもせぬ
+    patterns: 押しも押されぬ
+    prh: https://web.archive.org/web/20150710180524/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=286
+  - expected: 全て
+    patterns: /すべからく(?!.*べ[しき])/
+    prh: https://web.archive.org/web/20150825091657/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=293
+  - expected: 書き入れ
+    patterns: 掻き入れ
+    prh: http://japanknowledge.com/articles/blognihongo/entry.html?entryid=309
+  - expected: 引くに引けない
+    patterns: 引くに引かれない
+    prh: https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/110.html
+  - expected: 死ぬに死ねない
+    patterns: 死ぬに死なれない
+    prh: https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/110.html
+  - expected: 腸が煮えくり返る
+    patterns: 腹が煮えくり返る
+    prh: https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/110.html
+  - expected: 胸三寸
+    patterns: 胸先三寸
+    prh: https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/110.html
+  - expected: 腹に据えかねる
+    patterns: 肝に据えかねる
+    prh: https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/110.html
+  - expected: 鼻も引っ掛けない
+    patterns: /鼻にも(?:かけない|掛けない)/
+    prh: https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/110.html
+  - expected: 腹を抱えて
+    patterns: へそを抱えて
+    prh: https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/110.html
+  - expected: 後ろ盾
+    patterns: 後ろ立て
+    prh: http://woman.mynavi.jp/article/140212-30/
