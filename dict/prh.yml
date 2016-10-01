@@ -11,9 +11,10 @@ rules:
         to:   これはメソッドの返り値
       - from: 関数の返却値
         to:   関数の返り値
-  # 「例外を補足」
   - expected: 例外を捕捉
     patterns: 例外を補足
+  - expected: 似て非なるもの
+    patterns: 似て異なるもの
   - expected: 愛くるしい
     patterns: 愛苦しい
     prh: http://dictionary.goo.ne.jp/jn/692/meaning/m0u/
