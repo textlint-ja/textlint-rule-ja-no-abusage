@@ -41,7 +41,9 @@ textlint --rule ja-no-abusage README.md
 2種類の辞書ベースを持っています。
 
 - 形態素解析結果をベースにした[morpheme-match](http://azu.github.io/morpheme-match/ "morpheme-match")
+    - 誤爆しそうなものなど品詞レベルで限定したいものはこちら
 - 正規表現をベースにした[textlint-rule-prh](https://github.com/azu/textlint-rule-prh "textlint-rule-prh")
+    - 単純なマッチで問題ないものはこちら
 
 の2種類を使い分けています。
 
