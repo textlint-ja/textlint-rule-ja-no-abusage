@@ -29,7 +29,8 @@
     "prepublish": "npm run --if-present build"
   },
   "keywords": [
-    "textlint"
+    "textlint",
+    "textlintrule"
   ],
   "devDependencies": {
     "babel-cli": "^6.10.1",
