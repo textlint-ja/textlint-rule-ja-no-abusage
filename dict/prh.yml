@@ -54,8 +54,8 @@ rules:
   - expected: 熱に浮かされる
     patterns: 熱にうなされる
     prh: https://web.archive.org/web/20150407160525/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=48
-  - expected: やるせぬ
-    patterns: やるせない
+  - expected: やるせない
+    patterns: やるせぬ
     prh: https://web.archive.org/web/20150408185109/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=203
   - expected: 馬脚を露わす
     patterns: /馬脚を(晒す|さらす|出す)/
