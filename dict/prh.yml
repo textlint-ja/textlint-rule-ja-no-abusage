@@ -126,3 +126,97 @@ rules:
   - expected: 後ろ盾
     patterns: 後ろ立て
     prh: http://woman.mynavi.jp/article/140212-30/
+  - expected: 絶体絶命
+    pattern: 絶対絶命
+    prh: 参照 講談社校閲部『熟練校閲者が教える　間違えやすい日本語実例集  』講談社文庫、2018年。
+  - expected: 有頂天
+    pattern: 有頂点
+    prh: 参照 講談社校閲部『熟練校閲者が教える　間違えやすい日本語実例集  』講談社文庫、2018年。
+  - expected: 自己本位
+    pattern: /(自分本位|自[己分]本意)/
+    prh: 参照 講談社校閲部『熟練校閲者が教える　間違えやすい日本語実例集  』講談社文庫、2018年。
+  - expected: 一触即発
+    pattern: 一発即発
+  - expected: 意気揚々
+    pattern: 意気高々
+  - expected: 青息吐息
+    pattern: 青色吐息
+  - expected: 固定観念
+    pattern: 固定概念
+  - expected: 目$1留ま$2
+    pattern: /目(に|にも|が)止ま([らろりっるれ])/
+    prh: 「止」は動作の停止、「留」は意識を向ける時に使う
+  - expected: 目を留め
+    pattern: 目を止め
+    prh: 「止」は動作の停止、「留」は意識を向ける時に使う
+  - expected: 無理$1利かない
+    pattern: /無理([のが])効かない/
+    prh: 「効」は具体的な効果がある時に使う
+  - expected: 睨みを利かせ
+    pattern: 睨みを効かせ
+    prh: 「効」は具体的な効果がある時に使う
+  - expected: $1に障る
+    pattern: /([気癪])に触る/
+    prh: 部位に触れて不快に覚えることを「障」と表す
+  - expected: 見るに堪えない
+    pattern: /見るに[耐絶]えない/
+    prh: （それをする）価値があることを「堪える」という
+  - expected: 頭に入れておく
+    pattern: /頭に留め[て]?[置お]く/
+  - expected: 歓心を買う
+    pattern: /(?:関心|感心)を買う/
+  - expected: 恩に着る
+    pattern: 恩を着る
+  - expected: 脚光を浴び
+    pattern: 脚光を集め
+  - expected: 口が堅い
+    pattern: /口が[固硬]い/
+    prh: 堅実さを意味する「堅い」を用いる
+  - expected: づらい
+    pattern: ずらい
+    prh: 動詞の連用形+辛い（つらい）
+  - expected: 思い$1かない
+    pattern: /思いも([付つ])かない/
+    prh: 「思いつかない」で一つの動詞
+  - expected: たり$1ない
+    pattern: /足り([得え])ない/
+    prh: 参照 講談社校閲部『熟練校閲者が教える　間違えやすい日本語実例集  』講談社文庫、2018年。
+  - expected: 案の定
+    pattern: /案の[上条]/
+    prh: 参照 講談社校閲部『熟練校閲者が教える　間違えやすい日本語実例集  』講談社文庫、2018年。
+  - expected: 合いの手を入れる
+    pattern: 合いの手を打つ
+    prh: 参照 https://japanknowledge.com/articles/blognihongo/entry.html?entryid=221
+  - expected: 相$1を打つ
+    pattern: /相(づち|槌)を入れる/
+    prh: 参照 https://japanknowledge.com/articles/blognihongo/entry.html?entryid=221
+  - expected: 耳当たり$1$2
+    pattern: /耳障り([のが])?([良よ]い)/
+    prh: 参照 http://www.bunka.go.jp/prmagazine/rensai/kotoba/kotoba_004.html
+  - expected: 無理からぬ
+    pattern: 無理なからぬ
+    prh: 参照 神永曉『微妙におかしな日本語:ことばの結びつきの正解・不正解』草思社、2018年。
+  - expected: 間髪をいれず
+    pattern: /間髪([い容]れず|[を]?[お置]かず)/
+    prh: 参照 神永曉『微妙におかしな日本語:ことばの結びつきの正解・不正解』草思社、2018年。
+  - expected: 食指が動く
+    pattern: /食指[をが](そそる|そそられる|伸ばす)/
+    prh: 参照 神永曉『微妙におかしな日本語:ことばの結びつきの正解・不正解』草思社、2018年。
+  - expected: 念頭におく
+    pattern: /念頭に(入れる|する)/
+    prh: 参照 神永曉『微妙におかしな日本語:ことばの結びつきの正解・不正解』草思社、2018年。
+  - expected: 嫌気が差$1
+    pattern: /嫌気が(して|した)/
+    prh: 参照 神永曉『微妙におかしな日本語:ことばの結びつきの正解・不正解』草思社、2018年。
+  - expected: 精根$1尽き
+    pattern: /精魂(が)?尽き/
+    prh: 参照 神永曉『微妙におかしな日本語:ことばの結びつきの正解・不正解』草思社、2018年。
+  - expected: 苦虫を噛み潰したような
+    pattern: /苦虫を[か噛]んだような/
+    prh: 参照 神永曉『微妙におかしな日本語:ことばの結びつきの正解・不正解』草思社、2018年。
+  - expected: 活$1入れ
+    pattern: /喝(を)?入れ/
+    prh: 参照 神永曉『微妙におかしな日本語:ことばの結びつきの正解・不正解』草思社、2018年。
+  - expected: 一堂に会する
+    pattern: 一同に会する
+    prh: 参照 神永曉『微妙におかしな日本語:ことばの結びつきの正解・不正解』草思社、2018年。
