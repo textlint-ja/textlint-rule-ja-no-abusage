@@ -2379,11 +2379,6 @@ morpheme-match-textlint@^2.0.0:
   dependencies:
     morpheme-match-all "^2.0.0"
 
-morpheme-match@^1.0.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/morpheme-match/-/morpheme-match-1.2.1.tgz#783cdcf9feb0e8e7da7e794a8a38f6d711796aa0"
-  integrity sha512-SSIcFPas4Dctx5PbrfKbW5XNADlkcn38LI+fqgB9QtminQ7FXeOR3//rnAmooZ1/5zTGeFoi8H9kFBAH9y1nfQ==
-
 morpheme-match@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/morpheme-match/-/morpheme-match-2.0.0.tgz#d95916683e119d916335ffe54e79dfb0b2ceee6a"
