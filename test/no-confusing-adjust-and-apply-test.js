@@ -32,7 +32,8 @@ tester.run("textlint-rule-no-confusing-adjust-and-apply", rule, {
             output: "`logger`と`crashReporter`のmiddlewareを適用した`createStore`関数を作る",
             errors: [
                 {
-                    message: `"適用"の誤用である可能性があります。適応 => 適用`
+                    message: `"適用"の誤用である可能性があります。適応 => 適用`,
+                    index: 35
                 }
             ]
         }, {

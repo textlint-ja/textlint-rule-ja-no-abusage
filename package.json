@@ -23,9 +23,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/",
-    "build": "NODE_ENV=production babel src --out-dir lib --source-maps",
-    "watch": "babel src --out-dir lib --watch --source-maps",
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "watch": "textlint-scripts build --watch",
     "prepublish": "npm run --if-present build"
   },
   "keywords": [
@@ -33,18 +33,13 @@
     "textlintrule"
   ],
   "devDependencies": {
-    "babel-cli": "^6.10.1",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-jsdoc-to-assert": "^2.0.1",
-    "babel-preset-power-assert": "^1.0.0",
-    "babel-register": "^6.9.0",
-    "mocha": "^2.5.3",
     "power-assert": "^1.4.1",
-    "textlint-tester": "^1.2.0"
+    "textlint-scripts": "^2.1.0"
   },
   "dependencies": {
     "kuromojin": "^1.3.1",
     "morpheme-match": "^1.0.1",
+    "morpheme-match-textlint": "^2.0.0",
     "textlint-rule-prh": "^3.1.1"
   }
 }
