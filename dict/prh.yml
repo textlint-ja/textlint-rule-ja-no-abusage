@@ -172,9 +172,6 @@ rules:
   - expected: 口が堅い
     pattern: /口が[固硬]い/
     prh: 堅実さを意味する「堅い」を用いる
-  - expected: づらい
-    pattern: ずらい
-    prh: 動詞の連用形+辛い（つらい）
   - expected: 思い$1かない
     pattern: /思いも([付つ])かない/
     prh: 「思いつかない」で一つの動詞

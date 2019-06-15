@@ -51,6 +51,54 @@ module.exports = [
                 "pos_detail_1": "自立"
             }
         ]
-
+    },
+    //
+    {
+        // https://azu.github.io/morpheme-match/?text=書きずらい
+        // ず + らい というToken
+        message: `動詞の連用形+辛い（つらい）の場合は、「ずらい」ではなく「づらい」が適切です。
+        
+参考: 
+- https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/023.html
+- https://ameblo.jp/writer-yama/entry-10522384501.html`,
+        expected: "$1づらい",
+        tokens: [
+            {
+                "pos": "動詞",
+                "pos_detail_1": "自立",
+                "conjugated_form": "連用形",
+                "_capture": "$1"
+            },
+            {
+                "surface_form": "ず",
+            },
+            {
+                "surface_form": "らい",
+            }
+        ]
+    },
+    {
+        // https://azu.github.io/morpheme-match/?text=読みずらい
+        // ずら + い というToken
+        message: `動詞の連用形+辛い（つらい）の場合は、「ずらい」ではなく「づらい」が適切です。
+        
+参考: 
+- https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/023.html
+- https://ameblo.jp/writer-yama/entry-10522384501.html`,
+        expected: "$1づらい",
+        tokens: [
+            {
+                "pos": "動詞",
+                "pos_detail_1": "自立",
+                "conjugated_form": "連用形",
+                "_capture": "$1"
+            },
+            {
+                "surface_form": "ずら",
+            },
+            {
+                "surface_form": "い",
+            }
+        ]
     }
 ];
