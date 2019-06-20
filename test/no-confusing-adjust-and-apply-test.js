@@ -24,7 +24,8 @@ tester.run("textlint-rule-no-confusing-adjust-and-apply", rule, {
         "経営に失敗した企業に会社更生法を適用する",
         "厚生年金の適用",
         "規定を適用",
-        "法律を適用"
+        "法律を適用",
+        "読みづらい"
     ],
     invalid: [
         {
@@ -74,6 +75,32 @@ tester.run("textlint-rule-no-confusing-adjust-and-apply", rule, {
             errors: [
                 {
                     message: `"適用"の誤用である可能性があります。適応 => 適用`
+                }
+            ]
+        },
+        {
+            text: "この本は読みずらい",
+            output: "この本は読みづらい",
+            errors: [
+                {
+                    message: `動詞の連用形+辛い（つらい）の場合は、「ずらい」ではなく「づらい」が適切です。
+        
+参考: 
+- https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/023.html
+- https://ameblo.jp/writer-yama/entry-10522384501.html`
+                }
+            ]
+        },
+        {
+            text: "この本は書きずらい",
+            output: "この本は書きづらい",
+            errors: [
+                {
+                    message: `動詞の連用形+辛い（つらい）の場合は、「ずらい」ではなく「づらい」が適切です。
+        
+参考: 
+- https://www.nhk.or.jp/bunken/summary/kotoba/uraomote/023.html
+- https://ameblo.jp/writer-yama/entry-10522384501.html`
                 }
             ]
         }
