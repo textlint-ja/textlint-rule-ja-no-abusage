@@ -12,6 +12,11 @@
 - 「例外を補足する」の誤用
     - [「例外を補足する」](http://qiita.com/scivola/items/f02589968a4ca27bc52b#%E4%BE%8B%E5%A4%96%E3%82%92%E8%A3%9C%E8%B6%B3%E3%81%99%E3%82%8B "「例外を補足する」")
 
+など。詳細は辞書の定義を参照
+
+- [dict/prh.yml](dict/prh.yml)
+- [src/dictionary.js](src/dictionary.js)
+
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
