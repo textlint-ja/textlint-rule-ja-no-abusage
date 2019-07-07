@@ -2,13 +2,15 @@
 "use strict";
 import {createTextlintMatcher} from "morpheme-match-textlint"
 
-const tokenize = require("kuromojin").tokenize;
-const fs = require("fs");
-const path = require("path");
-const prh = require("textlint-rule-prh");
-const dictionaryList = require("./dictionary");
+import path from "path";
+import fs from "fs";
 
-const reporter = (context) => {
+import {tokenize} from "kuromojin";
+import {TextlintRuleReporter} from "@textlint/types";
+import dictionaryList from "./dictionary";
+
+const prh = require("textlint-rule-prh");
+const reporter: TextlintRuleReporter = (context) => {
     const {Syntax, RuleError, report, fixer, getSource} = context;
     const matcherList = createTextlintMatcher({
         tokenize: tokenize,
@@ -17,7 +19,7 @@ const reporter = (context) => {
     const prhLinter = prh.linter;
     const prhStr = prhLinter(context, {
         ruleContents: [
-            fs.readFileSync(path.join(__dirname, "..", "dict", "prh.yml"))
+            fs.readFileSync(path.join(__dirname, "..", "dict", "prh.yml"),"utf-8")
         ]
     });
     return {

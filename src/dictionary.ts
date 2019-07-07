@@ -1,4 +1,4 @@
-module.exports = [
+export default [
     {
         // http://azu.github.io/morpheme-match/?text=今朝起きた事件に法律(を適応)する
         message: `"適用"の誤用である可能性があります。適応 => 適用`,

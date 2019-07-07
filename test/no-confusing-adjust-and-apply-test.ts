@@ -3,7 +3,7 @@
 const TextLintTester = require("textlint-tester");
 const tester = new TextLintTester();
 // rule
-import rule from "../src/textlint-rule-ja-no-abusage";
+const rule = require("../src/textlint-rule-ja-no-abusage");
 // ruleName, rule, { valid, invalid }
 tester.run("textlint-rule-no-confusing-adjust-and-apply", rule, {
     valid: [
