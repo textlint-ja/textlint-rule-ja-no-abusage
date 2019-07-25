@@ -96,9 +96,6 @@ rules:
   - expected: 押しも押されもせぬ
     patterns: 押しも押されぬ
     prh: https://web.archive.org/web/20150710180524/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=286
-  - expected: 全て
-    patterns: /すべからく(?!.*べ[しき])/
-    prh: https://web.archive.org/web/20150825091657/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=293
   - expected: 書き入れ
     patterns: 掻き入れ
     prh: http://japanknowledge.com/articles/blognihongo/entry.html?entryid=309

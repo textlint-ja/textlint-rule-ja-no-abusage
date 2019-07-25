@@ -20,4 +20,19 @@ tester.run("可変", rule, {
             ]
         }
     ]
+}),
+tester.run("すべからく", rule, {
+    invalid: [
+        {
+            text: "すべからく邁進しなければならない",
+            errors: [
+                {
+                    message: `意味を間違えやすい副詞です。すべからく = 進んですべき、（当然）そうあるべき
+        
+参考:
+- https://web.archive.org/web/20150825091657/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=293`,
+                }
+            ]
+        }
+    ]
 });
