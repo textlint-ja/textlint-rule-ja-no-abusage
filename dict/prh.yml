@@ -88,7 +88,7 @@ rules:
     patterns: /(火蓋|火ぶた)が(?:切って)?落とされる/
     prh: https://www.nhk.or.jp/bunken/summary/kotoba/gimon/137.html
   - expected: $1島$2$3
-    patterns: /(取り付く|とりつく)(?:暇|ヒマ|ひま)(も|が)(?:無い|ない)/
+    patterns: /(取り付く|とりつく)(?:暇|ヒマ|ひま)(も|が)(無い|ない)/
     prh: https://web.archive.org/web/20150206044421/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=264
   - expected: 上を下への
     patterns: /上(?:や|へ)下への/
