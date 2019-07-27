@@ -100,20 +100,5 @@ module.exports = [
                 "surface_form": "い",
             }
         ]
-    },
-    {
-        // https://azu.github.io/morpheme-match/?text=すべからく
-        message: `意味を間違えやすい副詞です。すべからく = 進んですべき、（当然）そうあるべき
-        
-参考:
-- https://web.archive.org/web/20150825091657/http://japanknowledge.com/articles/blognihongo/entry.html?entryid=293`,
-        tokens: [
-          {
-              "surface_form": "すべからく",
-              "pos": "副詞",
-              "pos_detail_1": "一般",
-              "basic_form": "すべからく"
-          }
-        ]
     }
 ];
