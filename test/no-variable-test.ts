@@ -1,9 +1,9 @@
 // LICENSE : MIT
 "use strict";
-const TextLintTester = require("textlint-tester");
+import TextLintTester from "textlint-tester";
 const tester = new TextLintTester();
 // rule
-import rule from "../src/textlint-rule-ja-no-abusage";
+const rule = require("../src/textlint-rule-ja-no-abusage");
 // ruleName, rule, { valid, invalid }
 tester.run("可変", rule, {
     valid: [
