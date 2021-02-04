@@ -15,7 +15,7 @@
 など。詳細は辞書の定義を参照
 
 - [dict/prh.yml](dict/prh.yml)
-- [src/dictionary.js](src/dictionary.js)
+- [src/dictionary.ts](src/dictionary.ts)
 
 ## Install
 
