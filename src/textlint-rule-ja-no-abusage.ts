@@ -1,17 +1,18 @@
 // LICENSE : MIT
 "use strict";
-import {createTextlintMatcher} from "morpheme-match-textlint"
+import { createTextlintMatcher } from "morpheme-match-textlint"
 
 import path from "path";
 import fs from "fs";
 
-import {tokenize} from "kuromojin";
-import {TextlintRuleReporter} from "@textlint/types";
+import { tokenize } from "kuromojin";
+import { TextlintRuleReporter } from "@textlint/types";
 import dictionaryList from "./dictionary";
+// @ts-ignore
+import prh from "textlint-rule-prh";
 
-const prh = require("textlint-rule-prh");
 const reporter: TextlintRuleReporter = (context) => {
-    const {Syntax, RuleError, report, fixer, getSource} = context;
+    const { Syntax, RuleError, report, fixer, getSource } = context;
     const matcherList = createTextlintMatcher({
         tokenize: tokenize,
         dictionaries: dictionaryList
@@ -19,7 +20,7 @@ const reporter: TextlintRuleReporter = (context) => {
     const prhLinter = prh.linter;
     const prhStr = prhLinter(context, {
         ruleContents: [
-            fs.readFileSync(path.join(__dirname, "..", "dict", "prh.yml"),"utf-8")
+            fs.readFileSync(path.join(__dirname, "..", "dict", "prh.yml"), "utf-8")
         ]
     });
     return {
@@ -44,7 +45,8 @@ const reporter: TextlintRuleReporter = (context) => {
         }
     }
 };
-module.exports = {
+
+export default {
     linter: reporter,
     fixer: reporter
 };
