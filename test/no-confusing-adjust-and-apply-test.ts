@@ -1,9 +1,7 @@
-// LICENSE : MIT
-"use strict";
-const TextLintTester = require("textlint-tester");
+import rule from "../src/textlint-rule-ja-no-abusage";
+import TextLintTester from "textlint-tester";
+
 const tester = new TextLintTester();
-// rule
-const rule = require("../src/textlint-rule-ja-no-abusage");
 // ruleName, rule, { valid, invalid }
 tester.run("textlint-rule-no-confusing-adjust-and-apply", rule, {
     valid: [

@@ -1,4 +1,4 @@
-# textlint-rule-ja-no-abusage [![Build Status](https://travis-ci.org/textlint-ja/textlint-rule-ja-no-abusage.svg?branch=master)](https://travis-ci.org/textlint-ja/textlint-rule-ja-no-abusage) [![Gitter](https://badges.gitter.im/textlint-ja/textlint-ja.svg)](https://gitter.im/textlint-ja/textlint-ja)
+# textlint-rule-ja-no-abusage [![Actions Status: test](https://github.com/textlint-ja/textlint-rule-ja-no-abusage/workflows/test/badge.svg)](https://github.com/textlint-ja/textlint-rule-ja-no-abusage/actions?query=workflow%3A"test")
 
 よくある誤用をチェックするtextlintルール
 
