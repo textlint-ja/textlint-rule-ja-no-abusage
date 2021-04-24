@@ -16,7 +16,7 @@
     "dict/",
     "lib/"
   ],
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "よくある誤用をチェックするtextlintルール",
   "main": "lib/textlint-rule-ja-no-abusage.js",
   "directories": {
