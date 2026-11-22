@@ -14,7 +14,8 @@ import prh from "textlint-rule-prh";
 const reporter: TextlintRuleReporter = (context) => {
     const { Syntax, RuleError, report, fixer, getSource } = context;
     const matcherList = createTextlintMatcher({
-        tokenize: tokenize,
+        // Copy the readonly array from kuromojin 3.1 into the mutable array that morpheme-match-textlint expects
+        tokenize: (text: string) => tokenize(text).then((tokens) => [...tokens]),
         dictionaries: dictionaryList
     });
     const prhLinter = prh.linter;
